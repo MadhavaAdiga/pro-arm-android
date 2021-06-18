@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        Intent intent = new Intent();
-        intent.putExtra(AppConst.IP_EXTRAS,"192.168.1.9")
-                .putExtra(AppConst.PORT,8080);
-
-        TCPClientService.enqueueWork(this,intent);
+//        Intent intent = new Intent();
+//        intent.putExtra(AppConst.IP_EXTRAS,"192.168.1.9")
+//                .putExtra(AppConst.PORT,8080);
+//
+//        TCPClientService.enqueueWork(this,intent);
     }
 }
