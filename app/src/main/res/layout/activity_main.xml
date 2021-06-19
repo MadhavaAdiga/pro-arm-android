@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,40 +7,202 @@
     android:theme="@style/Theme.pro_arm"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="15dp">
 
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView8"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="@string/app_name"
-                android:textAlignment="center"
-                android:textColor="@color/colorSecondaryDark"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-        </androidx.appcompat.widget.Toolbar>
+                android:layout_gravity="top"
+                android:layout_margin="20dp"
+                android:text="Wrist"
+                android:textColor="@color/colorSecondaryLight"
+                android:textSize="25sp" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+            <com.google.android.material.slider.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/slide_hrz_margin"
+                android:layout_marginTop="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        </com.google.android.material.card.MaterialCardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView6"
+            tools:layout_editor_absoluteX="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="20dp"
+                android:text="Elbow"
+                android:textColor="@color/colorSecondaryLight"
+                android:textSize="25sp" />
+
+            <com.google.android.material.slider.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/slide_hrz_margin"
+                android:layout_marginTop="20dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView6"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView3"
+            tools:layout_editor_absoluteX="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="20dp"
+                android:text="Arm"
+                android:textColor="@color/colorSecondaryLight"
+                android:textSize="25sp" />
+
+            <com.google.android.material.slider.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/slide_hrz_margin"
+                android:layout_marginTop="20dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView5"
+            tools:layout_editor_absoluteX="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="20dp"
+                android:text="Wrist 0 degrees"
+                android:textColor="@color/colorSecondaryLight"
+                android:textSize="25sp" />
+
+            <com.google.android.material.slider.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/slide_hrz_margin"
+                android:layout_marginTop="20dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView5"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+            tools:layout_editor_absoluteX="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="20dp"
+                android:text="Waist 0 degrees"
+                android:textColor="@color/colorSecondaryLight"
+                android:textSize="25sp" />
+
+            <com.google.android.material.slider.Slider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/slide_hrz_margin"
+                android:layout_marginTop="20dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="@dimen/card_btn_width"
+            android:layout_height="@dimen/card_btn_height"
+            android:layout_margin="@dimen/card_btn_margin"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView7"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2"
+            android:layout_width="@dimen/card_btn_width"
+            android:layout_height="@dimen/card_btn_height"
+            android:layout_margin="@dimen/card_btn_margin"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:layout_constraintBottom_toTopOf="@+id/materialCardView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView7"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/colorPrimaryLight"
+            android:layout_height="@dimen/card_btn_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

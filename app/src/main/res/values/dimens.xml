@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_btn_height">130dp</dimen>
+    <dimen name="card_btn_margin">20dp</dimen>
+    <dimen name="land_card_btn">200dp</dimen>
+    <dimen name="land_slider_hrz_margin">20dp</dimen>
+    <dimen name="slide_hrz_margin">10dp</dimen>
+    <dimen name="card_btn_width">140dp</dimen>
+</resources>
