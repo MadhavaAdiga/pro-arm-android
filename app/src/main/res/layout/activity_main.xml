@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/Theme.pro_arm"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -105,9 +106,20 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:layout_margin="20dp"
-                android:text="Wrist 0 degrees"
+                android:text="0"
                 android:textColor="@color/colorSecondaryLight"
                 android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="16sp"
+                android:text="Wrist"
+                android:textAllCaps="true"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                />
 
             <com.google.android.material.slider.Slider
                 android:layout_width="match_parent"
@@ -132,9 +144,20 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:layout_margin="20dp"
-                android:text="Waist 0 degrees"
+                android:text="0"
                 android:textColor="@color/colorSecondaryLight"
                 android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="16sp"
+                android:text="Waist"
+                android:textAllCaps="true"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                />
 
             <com.google.android.material.slider.Slider
                 android:layout_width="match_parent"
